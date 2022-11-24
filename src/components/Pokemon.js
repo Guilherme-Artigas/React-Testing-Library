@@ -20,7 +20,7 @@ class Pokemon extends React.Component {
           <p data-testid="pokemon-weight">
             Average weight: {value} {measurementUnit}
           </p>
-          {showDetailsLink && <Link to={ `pokemons/${id}` }>More details</Link>}
+          {showDetailsLink && <Link to={ `/React-Testing-Library/pokemons/${id}` }>More details</Link>}
         </div>
         <img src={ `${image}` } alt={ `${name} sprite` } />
         {isFavorite && (

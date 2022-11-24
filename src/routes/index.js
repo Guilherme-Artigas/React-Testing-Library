@@ -20,7 +20,7 @@ class Routes extends Component {
       <Switch>
         <Route
           exact
-          path="/"
+          path="/React-Testing-Library"
           render={ () => (
             <Pokedex
               pokemons={ pokemons }
@@ -29,7 +29,7 @@ class Routes extends Component {
           ) }
         />
         <Route
-          path="/pokemons/:id"
+          path="/React-Testing-Library/pokemons/:id"
           render={ ({ match }) => (
             <PokemonDetails
               isPokemonFavoriteById={ isPokemonFavoriteById }
@@ -40,7 +40,7 @@ class Routes extends Component {
           ) }
         />
         <Route
-          path="/favorites"
+          path="/React-Testing-Library/favorites"
           render={ () => <FavoritePokemons pokemons={ favoritePokemons } /> }
         />
         <Route path="/about" component={ About } />
